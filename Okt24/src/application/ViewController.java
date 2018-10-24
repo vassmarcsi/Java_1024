@@ -55,6 +55,13 @@ public class ViewController implements Initializable{ //beírom hogy implements 
 
     }
     
+    //töröl
+    @FXML
+    void menuItemTorol(ActionEvent event) {
+    	Szemely szemelyTorol = tabla.getSelectionModel().getSelectedItem();
+    	tablaAdatok.remove(szemelyTorol);
+    }
+    
     @FXML
     void hozzadGomb(ActionEvent event) {
     	Szemely szemelyAdd = new Szemely(idMezo.getText(), 
