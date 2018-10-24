@@ -55,6 +55,16 @@ public class ViewController implements Initializable{ //beírom hogy implements 
 
     }
     
+    @FXML
+    void menuItemSzerkeszt(ActionEvent event) {
+    	Szemely szemelySzerkeszt = tabla.getSelectionModel().getSelectedItem();
+    	tablaAdatok.remove(szemelySzerkeszt);
+    	idMezo.setText(szemelySzerkeszt.getId());
+    	VezNevMezo.setText(szemelySzerkeszt.getVezeteknev());
+    	KerNevMezo.setText(szemelySzerkeszt.getKeresztnev());
+    	SzulDatumMezo.setText(szemelySzerkeszt.getSzuletesidatum());
+    }
+    
     //töröl
     @FXML
     void menuItemTorol(ActionEvent event) {

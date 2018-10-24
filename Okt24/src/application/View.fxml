@@ -43,6 +43,7 @@
                   <ContextMenu>
                     <items>
                       <MenuItem mnemonicParsing="false" onAction="#menuItemTorol" text="Töröl" />
+                        <MenuItem mnemonicParsing="false" onAction="#menuItemSzerkeszt" text="Szerkeszt" />
                     </items>
                   </ContextMenu>
                </contextMenu>
