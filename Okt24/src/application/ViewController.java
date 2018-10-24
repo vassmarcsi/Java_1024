@@ -57,10 +57,17 @@ public class ViewController implements Initializable{ //beírom hogy implements 
     
     @FXML
     void hozzadGomb(ActionEvent event) {
-    	System.out.println(idMezo.getText());
-    	System.out.println(VezNevMezo.getText());
-    	System.out.println(KerNevMezo.getText());
-    	System.out.println(SzulDatumMezo.getText());
+    	Szemely szemelyAdd = new Szemely(idMezo.getText(), 
+    			VezNevMezo.getText(), 
+    			KerNevMezo.getText(), 
+    			SzulDatumMezo.getText());
+    	
+    	tablaAdatok.add(szemelyAdd);
+    	
+//    	System.out.println(idMezo.getText());
+//    	System.out.println(VezNevMezo.getText());
+//    	System.out.println(KerNevMezo.getText());
+//    	System.out.println(SzulDatumMezo.getText());
     }
     
     // kezdő adatok rögzítése
